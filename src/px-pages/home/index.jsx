@@ -17,7 +17,7 @@ function HeroBanner() {
           </div>
           <div className="px-wrapper px-wrapper__right px-wrapper--base">
             <figure className="px-figure px-img-container px-img-0001" id="px-img-0001">
-              <img src="/px-assets/images/home-hero-illustration.svg" alt="" />
+              <img src={`${import.meta.env.BASE_URL}px-assets/images/home-hero-illustration.svg`} alt="" />
             </figure>
           </div>
         </div>
