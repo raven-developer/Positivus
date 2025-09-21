@@ -1,0 +1,25 @@
+.px-flex {
+  display: flex;
+
+  &--col {
+    flex-direction: column;
+  }
+
+  &--row {
+    flex-direction: row;
+  }
+
+  &--space-between {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &--center-y {
+    justify-content: center;
+  }
+
+  &--center {
+    justify-content: center;
+    align-items: center;
+  }
+}

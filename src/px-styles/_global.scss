@@ -1,0 +1,35 @@
+.px-container {
+  position: relative;
+  width: 100%;
+  display: block;
+  margin-inline: auto;
+
+  &--base {
+    max-width: 1240px;
+  }
+
+  &--sm {
+    max-width: 992px;
+  }
+}
+
+.px-section {
+  position: relative;
+  width: 100%;
+  display: block;
+  margin-inline: 16px;
+  padding-block: 140px 0;
+}
+
+.px-wrapper {
+  width: 100%;
+  gap: 32px;
+
+  &--base {
+    flex: 1;
+  }
+
+  &--button {
+    margin-top: 12px;
+  }
+}

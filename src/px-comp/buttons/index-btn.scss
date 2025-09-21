@@ -1,0 +1,58 @@
+.px-wrapper--button {
+  display: flex;
+  position: relative;
+  height: auto;
+}
+
+.px-btn {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  display: inline-block;
+  margin-top: 12px;
+  overflow: hidden;
+  padding: 20px 23px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  &--solid {
+    background-color: var(--black);
+    border: 1px solid var(--black);
+
+    &:hover {
+      background-color: var(--white);
+    }
+  }
+}
+
+.px-btn__content,
+.px-btn__paragrph {
+  overflow: hidden;
+}
+
+.px-btn__paragraph {
+  position: relative;
+  display: inline-block;
+  transform: translate3d(0, 0, 0);
+}
+
+.px-btn:hover .px-btn__paragraph {
+  animation: btnInitial 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards, btnEnd 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.15s forwards;
+}
+
+@keyframes btnInitial {
+  100% {
+    transform: translate3d(0, -120%, 0) skewY(7deg);
+  }
+}
+
+@keyframes btnEnd {
+  0% {
+    transform: translate3d(0, 120%, 0) skewY(7deg);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0) skewY(0deg);
+  }
+}
