@@ -11,13 +11,15 @@ import Home from './px-pages/home/index';
 /* Import Style */
 import './px-styles/index.scss';
 
+import './px-script/anim.js';
+
 /* App Start */
 
 function App() {
   return (
     <div className="px-body-container">
       <NavBar />
-      <main>
+      <main className="px-main px-page--home" id="px-main">
         <Routes>
           <Route
             path="/"

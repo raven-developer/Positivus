@@ -1,0 +1,105 @@
+.px-font--highlight {
+  padding: 3px 8px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.px-card--service.px-bgcolor {
+  &--green {
+    background-color: var(--accent);
+    border: 1px solid var(--black);
+
+    .px-card__title span {
+      @extend .px-font--highlight;
+      background-color: var(--white);
+    }
+  }
+
+  &--dark {
+    background-color: var(--black);
+    border: 1px solid var(--white);
+
+    .px-card__title span {
+      @extend .px-font--highlight;
+      background-color: var(--white);
+    }
+
+    .px-btn__paragraph {
+      color: var(--white);
+    }
+  }
+
+  &--gray {
+    background-color: var(--white);
+    border: 1px solid var(--black);
+
+    .px-card__title span {
+      @extend .px-font--highlight;
+      background-color: var(--accent);
+    }
+  }
+}
+
+.px-card--service {
+  justify-content: space-between;
+  padding: 50px;
+  border-radius: 45px;
+  position: relative;
+  top: 0;
+  margin-bottom: 8px;
+  transition: all 0.3s ease;
+}
+
+.px-card--service:hover {
+  top: -10px;
+}
+
+.px-card--service:hover::after {
+  top: 18px;
+}
+
+.px-card--service:active,
+.px-card--service:focus {
+  top: 0;
+}
+
+.px-card--service:active::after,
+.px-card--service:focus::after {
+  top: 8px;
+}
+
+.px-card--service::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  border-radius: 45px;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.px-card--service .px-card {
+  &__content {
+    justify-content: space-between;
+  }
+
+  &__title {
+    line-height: 1.45em;
+  }
+
+  &__image-container {
+    max-width: 210px;
+    max-height: 210px;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+}

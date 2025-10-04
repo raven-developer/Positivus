@@ -1,14 +1,20 @@
-.px-wrapper--button {
+.px-wrapper__button {
   display: flex;
   position: relative;
   height: auto;
 }
 
+.px-btn__content,
+.px-btn__paragraph {
+  overflow: hidden;
+}
+
+
 .px-btn {
   width: fit-content;
   height: fit-content;
   position: relative;
-  display: inline-block;
+  display: inline-flex;
   margin-top: 12px;
   overflow: hidden;
   padding: 20px 23px;
@@ -20,15 +26,24 @@
     background-color: var(--black);
     border: 1px solid var(--black);
 
+    .px-btn__paragraph {
+      color: var(--white);
+    }
+
     &:hover {
       background-color: var(--white);
     }
   }
-}
 
-.px-btn__content,
-.px-btn__paragrph {
-  overflow: hidden;
+  &--tertiary {
+    padding: unset;
+    border-radius: unset;
+
+    .px-btn__paragraph {
+      color: var(--black);
+      mix-blend-mode: unset;
+    }
+  }
 }
 
 .px-btn__paragraph {

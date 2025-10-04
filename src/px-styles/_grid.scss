@@ -1,0 +1,23 @@
+.px-grid {
+  display: grid;
+}
+
+.px-grid {
+  &--3col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &--2col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .px-grid {
+
+    &--3col,
+    &--2col {
+      grid-template-columns: 1fr;
+    }
+  }
+}
