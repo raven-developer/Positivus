@@ -30,4 +30,12 @@
   &--jcenter {
     justify-content: center;
   }
+
+  &--wrap {
+    flex-wrap: wrap;
+  }
+
+  &--nowrap {
+    flex-wrap: nowrap;
+  }
 }

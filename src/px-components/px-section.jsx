@@ -5,7 +5,7 @@ export function FloatingSection({ FloatingVariant, FloatingID, Gap, FloatingHead
     <section className={`px-section px-section--base px-section--floating px-section__${FloatingID}`} data-variant={FloatingVariant} data-page={FloatingID} id={FloatingID}>
       <div className="px-container px-container--base">
         <div className="px-section__content-block px-content-block px-flex px-flex--row px-flex--acenter gap-100">
-          <div className={`px-wrapper px-wrapper__left px-wrapper--base px-flex px-flex--col gap-${Gap}`}>
+          <div className={`px-wrapper px-wrapper__left px-wrapper--sm px-flex px-flex--col gap-${Gap}`}>
             <Content.SectionHeader
               sectionHeading={FloatingHeader}
               extraClass={FloatingHeaderClass}
@@ -23,10 +23,8 @@ export function FloatingSection({ FloatingVariant, FloatingID, Gap, FloatingHead
             />
           </div>
           <div className="px-wrapper px-wrapper__bottom px-wrapper--base">
-            <Content.SectionImage
+            <Content.SectionImageAfter
               imageID={FloatingImageID}
-              fileName={FloatingImageFile}
-              imageAlt={FloatingImageAlt}
             />
           </div>
         </div>

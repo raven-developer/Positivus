@@ -6,7 +6,7 @@
   -webkit-box-decoration-break: clone;
 }
 
-.px-card--service.px-bgcolor {
+.px-card.px-bgcolor {
   &--green {
     background-color: var(--accent);
     border: 1px solid var(--black);
@@ -100,6 +100,44 @@
       width: 100%;
       height: auto;
       object-fit: contain;
+    }
+  }
+}
+
+.px-card.px-card--case-card {
+  border: unset;
+}
+
+.px-card {
+  &--case-card {
+    padding: 70px 64px;
+
+    .px-card__paragraph {
+      color: var(--white);
+    }
+
+    .px-card__content {
+      justify-content: space-between;
+    }
+
+    &:first-child {
+      border-top-left-radius: 45px;
+      border-bottom-left-radius: 45px;
+    }
+
+    &:last-child {
+      border-top-right-radius: 45px;
+      border-bottom-right-radius: 45px;
+    }
+
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      height: calc(100% - 140px);
+      border-right: 1px solid var(--white);
     }
   }
 }

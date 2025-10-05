@@ -56,7 +56,7 @@ function ServicesSection() {
           <div className="px-wrapper px-wrapper__bottom px-wrapper--base">
             <div className="px-wrapper__cards px-grid px-grid--2col gap-40">
               <Card.ServicesCard
-                cardTitle={["Search Engine", "Optimization"]}
+                cardTitle="Search Engine Optimization"
                 cardVariant="gray"
                 cardImage="tokyo-magnifier-web-search.png"
                 cardImgAlt="Magnifying glass over a webpage"
@@ -114,12 +114,43 @@ function SectionCTA() {
       FloatingParagraph="Contact us today to learn more about how our digital marketing services can help your business grow and succeed online."
       FloatingParagraphClass=""
       FloatingImageID="px-image--floating-01"
-      FloatingImageFile=""
-      FloatingImageAlt="Digital marketing concept with various digital icons"
     />
   );
 }
 
+function CaseStudySection() {
+  return (
+    <section className="px-section px-section--base px-section__home-casestudy" data-variant="white" data-page="home-casestudy" id="home-casestudy">
+      <div className="px-container px-container--base">
+        <div className="px-section__content-block px-content-block px-flex px-flex--col gap-100">
+          <div className="px-wrapper px-wrapper__top px-wrapper--800 px-flex px-flex--row gap-40">
+            <Content.SectionHeader
+              sectionHeading="Case Studies"
+              extraClass="px-highlight--green"
+            />
+            <Content.SectionParagraph
+              contentParagraph="Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies"
+            />
+          </div>
+
+          <div className="px-wrapper px-wrapper__bottom px-wrapper--base px-grid px-grid--3col is_nogap">
+            <Card.CaseCard
+              CaseStudyContent="For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase in website traffic and a 25% increase in sales."
+            />
+
+            <Card.CaseCard
+              CaseStudyContent="For a B2B software company, we developed an SEO strategy that resulted in a first page ranking for key keywords and a 200% increase in organic traffic."
+            />
+
+            <Card.CaseCard
+              CaseStudyContent="For a national retail chain, we created a social media marketing campaign that increased followers by 25% and generated a 20% increase in online sales."
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
 
 export default function Home() {
   return (
@@ -127,6 +158,7 @@ export default function Home() {
       <HeroBanner />
       <ServicesSection />
       <SectionCTA />
+      <CaseStudySection />
     </>
   );
 }

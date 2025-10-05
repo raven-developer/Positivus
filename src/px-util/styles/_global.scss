@@ -13,11 +13,10 @@
   }
 }
 
-.px-section {
+.px-section:not(.px-section--hero) {
   position: relative;
   width: 100%;
   display: block;
-  margin-inline: 16px;
   padding-block: 140px 0;
 }
 
@@ -32,8 +31,20 @@
     max-width: 800px;
   }
 
+  &--992 {
+    max-width: 992px;
+  }
+
+  &--sm {
+    max-width: 550px;
+  }
+
   &--button {
     margin-top: 12px;
+  }
+
+  &__header {
+    flex-shrink: 0;
   }
 }
 
@@ -54,7 +65,11 @@
 
 .px-section {
   &--floating .px-container {
-    padding: 60px;
+    padding: 60px 80px;
     border-radius: 44px;
+  }
+
+  &--hero {
+    margin-top: 200px
   }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import * as Btn from './px-buttons';
+import { Btn, Content, Section } from '@/px-components';
 import "./styles/index-cards.scss";
 
 export function ServicesCard({ cardTitle, cardVariant, cardImage, cardImgAlt }) {
@@ -28,6 +28,27 @@ export function ServicesCard({ cardTitle, cardVariant, cardImage, cardImgAlt }) 
       </div>
       <div className="px-card__image-container px-flex px-flex--center">
         <img src={`${import.meta.env.BASE_URL}px-assets/images/${cardImage}`} alt={cardImgAlt} />
+      </div>
+    </div>
+  );
+}
+
+export function CaseCard({ CaseStudyContent, CaseStudyButton = "Read More" }) {
+  return (
+    <div className={`px-card px-card--case-card px-bgcolor--dark px-flex px-flex-col gap-70`}>
+      <div className="px-card__content px-flex px-flex--col gap-30">
+        <Content.SectionParagraph
+          contentParagraph={CaseStudyContent}
+          extraClass="px-card__paragraph"
+        />
+        <Btn.ButtonLeftIcon
+          btnLabel={CaseStudyButton}
+          btnLink="/"
+          btnType="tertiary"
+          btnStyle="transparent"
+          btnIconAlt="Arrow pointing 30 degrees to the left"
+          divClass="px-animate"
+        />
       </div>
     </div>
   );

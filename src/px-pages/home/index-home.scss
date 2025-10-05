@@ -8,3 +8,19 @@
     width: 100%;
   }
 }
+
+.px-image--floating-01::after {
+  content: '';
+  position: absolute;
+  background-image: url('/Positivus/px-assets/images/abstract-image.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  inset: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 359px;
+  height: 395px;
+  overflow: visible;
+}

@@ -29,3 +29,10 @@ export function SectionImage({ imageID, fileName, imageAlt }) {
     </figure>
   )
 }
+
+export function SectionImageAfter({ imageID }) {
+  return (
+    <figure className={`px-figure px-img-container ${imageID}`} id={imageID}>
+    </figure>
+  )
+}
