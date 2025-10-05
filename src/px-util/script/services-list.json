@@ -1,0 +1,38 @@
+[
+  {
+    "cardTitle": "Search Engine Optimization",
+    "cardVariant": "gray",
+    "cardImage": "tokyo-magnifier-web-search.png",
+    "cardImgAlt": "Magnifying glass over a webpage"
+  },
+  {
+    "cardTitle": "Pay-per-click advertising",
+    "cardVariant": "green",
+    "cardImage": "tokyo-magnifier-web-search.png",
+    "cardImgAlt": "Magnifying glass over a webpage"
+  },
+  {
+    "cardTitle": "Social Media Marketing",
+    "cardVariant": "dark",
+    "cardImage": "tokyo-magnifier-web-search.png",
+    "cardImgAlt": "Magnifying glass over a webpage"
+  },
+  {
+    "cardTitle": "Email Marketing",
+    "cardVariant": "gray",
+    "cardImage": "tokyo-magnifier-web-search.png",
+    "cardImgAlt": "Magnifying glass over a webpage"
+  },
+  {
+    "cardTitle": "Content Creation",
+    "cardVariant": "green",
+    "cardImage": "tokyo-magnifier-web-search.png",
+    "cardImgAlt": "Magnifying glass over a webpage"
+  },
+  {
+    "cardTitle": "Analytics and Tracking",
+    "cardVariant": "dark",
+    "cardImage": "tokyo-magnifier-web-search.png",
+    "cardImgAlt": "Magnifying glass over a webpage"
+  }
+]

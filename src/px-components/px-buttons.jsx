@@ -1,5 +1,5 @@
 import React from "react";
-import "./index-btn.scss";
+import "./styles/index-btn.scss";
 
 export function ButtonFilled({ btnLabel, btnLink, btnType, btnStyle, divClass }) {
   return (

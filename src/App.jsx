@@ -9,9 +9,9 @@ import Home from './px-pages/home/index';
 /* import About from './px-pages/about'; uncomment when creating about page */
 
 /* Import Style */
-import './px-styles/index.scss';
+import './px-util/styles/index.scss';
 
-import './px-script/anim.js';
+import './px-util/script/anim.js';
 
 /* App Start */
 

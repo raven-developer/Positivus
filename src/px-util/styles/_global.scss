@@ -47,3 +47,14 @@
     background-color: var(--accent);
   }
 }
+
+.px-section--floating[data-variant='white'] .px-container {
+  background-color: var(--white);
+}
+
+.px-section {
+  &--floating .px-container {
+    padding: 60px;
+    border-radius: 44px;
+  }
+}

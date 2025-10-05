@@ -1,6 +1,6 @@
 import React from "react";
-import * as Btn from '../../px-comp/buttons/px-buttons';
-import "./index-cards.scss";
+import * as Btn from './px-buttons';
+import "./styles/index-cards.scss";
 
 export function ServicesCard({ cardTitle, cardVariant, cardImage, cardImgAlt }) {
 

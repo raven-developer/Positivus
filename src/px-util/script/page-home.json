@@ -1,0 +1,17 @@
+{
+  "heroSection": {
+    "heading": "Navigating the digital landscape for success",
+    "paragraph": "Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.",
+    "image": {
+      "fileName": "home-hero-illustration.svg",
+      "altText": "Digital marketing concept with various digital icons"
+    },
+    "button": {
+      "label": "Book a Consultation",
+      "link": "/contact",
+      "type": "primary",
+      "style": "solid",
+      "divClass": "px-animate"
+    }
+  }
+}

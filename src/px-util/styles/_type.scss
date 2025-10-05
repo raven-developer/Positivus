@@ -90,4 +90,8 @@
   &--card {
     font-size: 1.67rem;
   }
+
+  &--small {
+    @extend .px-heading--card;
+  }
 }
